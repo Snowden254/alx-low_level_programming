@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - the main function
+ * main - this function takes no argument
  * 
  * Return: 0 when successful
  */

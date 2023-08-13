@@ -4,9 +4,9 @@
 #include<stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - main function
- *
- * Return: always 0
+ * main - This program will assign a random number to the variable n each time it is executed
+ * 
+ * Return: always 0 (success)
  */
 int main(void)
 {

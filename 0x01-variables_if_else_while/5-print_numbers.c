@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - main function
+ * main - rints all single digit numbers of base 10 starting from 0, followed by new line
  *
- * Return: always 0
+ * Return: always 0 (success)
  */
 
 int main(void)

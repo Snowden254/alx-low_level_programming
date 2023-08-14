@@ -3,27 +3,19 @@
 /**
  * main - prints all possible combinations of single digit numbers
  *
- * Return: always 0 (success)
+ * Return: always 0 (success
  */
 
 int main(void)
 {
-	int digit = 0;
+	int i;
 
-	while (digit <= 9)
-
+	for (i = 0 ; i < 10 ; i++)
 	{
-		putchar(digit + 48);
-
-		if (digit != 9);
-		{
-			putchar(',');
-			putchar(' ');
-		}
-
-		digit++;
+		putchar(i);
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
-
 	return (0);
 }

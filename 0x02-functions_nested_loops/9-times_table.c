@@ -1,28 +1,40 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * times_table - prints 9 times table
- * Return: 0
+ *
+ * Example Table
+ * 0, 0, 0, 0, ..
+ * 0, 1, 2, 3, ..
+ *
  */
 
 void times_table(void)
 {
-	int i, j, result;
+	int num, mult, prod;
 
-	for (i = 0 ; i < 10 ; i++)
+	for (num = 0 ; num <= 9 ; num++)
 	{
-		for (j = 0 ; j < 10 ; j++)
+		_putchar(48);
+		for (mult = 1 ; mult <= 9 ; mult++)
 		{
-			result = i * j;
-			if (j == 0)
-				printf("%d, ", result);
+			_putchar(',');
+			_putchar(' ');
+
+			prod = num * mult;
+
+			/*
+			 * put space if product is a single number
+			 * place the first digit if its two numbers
+			 */
+			if (prod <= 9)
+				_putchar(' ');
 			else
-			{
-				printf("%2d", result);
-				if (j != 9)
-					printf(", ");
-			}
+				_putchar((prod / 10) + 48); /*get the first digit*/
+
+			_putchar((prod % 10) + 48); /*get the second digit*/
 		}
-		printf('\n');
+		_putchar('\n');
 	}
 }

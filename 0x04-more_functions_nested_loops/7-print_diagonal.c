@@ -2,8 +2,10 @@
 
 /**
  * print_diagonal - prints diagonal using the '\' character
+ *
  * @n: number of times the '\' character should be printed
- * Return: void
+ *
+ * Return: Always 0 (success)
  */
 
 void print_diagonal(int n)

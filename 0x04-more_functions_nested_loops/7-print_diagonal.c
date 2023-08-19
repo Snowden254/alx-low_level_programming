@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints a diagonal using '\' character
+ * print_diagonal - prints a diagonal using \ character
  *
- * @n: number of times the '\' character should be printed
+ * @n: number of times the \ character should be printed
  *
  * Return: Always 0 (success)
  */

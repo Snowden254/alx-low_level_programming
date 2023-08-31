@@ -23,13 +23,14 @@ int is_palindrome(char *s)
 }
 
 /**
- * check - check for the palindrome
+ * check - checker for the palindrome
  * @s: string
  * @start: int moves from right to left
  * @end: int moves from left to right
  * @mod: int
  * Return: 0 or 1
  */
+
 
 int check(char *s, int start, int end, int mod)
 {

@@ -2,31 +2,28 @@
 
 /**
  * *_strdup - return a pointer to a newly allocated space in memory
- * which contains a copy of the string given as a parameter.
- * @str: string
- * Return: 0
+ * @str: string to copy to new memory
+ * Return: pointer to new memory
  */
 
 char *_strdup(char *str)
 {
-	int i = 0, size = 0;
-	char *m;
+	int i;
+	char *copy;
+	int count = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (; str[size] != '\0'; size++)
-	;
+	for (i = 0; str[i] != '\0'; i++)
+		count++;
 
-	/*+1 on the size puts the end of string character*/
-	m = malloc(size * sizeof(*str) + 1);
+	copy = malloc(sizeof(char) * count + 1);
 
-	if (m == 0)
+	if (copy == NULL)
 		return (NULL);
-	else
-	{
-		for (; i < size; i++)
-			m[i] = str[i];
-	}
-	return (m);
+	for (i = 0; str[i] != '\0'; i++)
+		copy[i] = str[i];
+
+	return (copy);
 }
